@@ -1,5 +1,7 @@
 <?php
 
+
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,63 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('/', function () {
-    return view('layout.landing');
-});
+Route::get('/', [App\Http\Controllers\Web\LandingController::class, 'index'])->name('landing.home');
+Route::get('/nihss', [App\Http\Controllers\Web\LandingController::class, 'index'])->name('landing.home');
+
+Route::get('/', [App\Http\Controllers\Web\Landing\ClassController::class,'index'])->name('landing.home');
+
+@include ('web/ajax.php');
+
+@include('web/auth.php');
+
+@include('web/event.php');
+
+@include('web/event_class.php');
+
+@include('web/subject_study.php');
+
+@include('web/event_topic.php');
+
+@include('web/news.php');
+
+@include('web/training.php');
+
+@include('web/curriculum_version.php');
+
+@include('web/curriculum.php');
+
+@include('web/module.php');
+
+@include('web/module_attachment.php');
+
+@include('web/code.php');
+
+@include('web/training_question.php');
+
+@include('web/training_enroll.php');
+
+@include('web/question.php');
+
+@include('web/answer.php');
+
+@include('web/task.php');
+
+@include('web/task_answer.php');
+
+@include('web/task_answer_detail.php');
+
+@include('web/landing.php');
+
+@include('web/user.php');
+
+@include('web/profile.php');
+
+@include ('web/file.php');
+
+@include ('web/schedule.php');
+
+@include ('web/hipeni.php');
+
+@include ('web/enroll.php');
+//landing
+
