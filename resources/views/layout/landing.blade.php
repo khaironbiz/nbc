@@ -52,51 +52,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
-
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.home') }}">Home--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.news') }}">News--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.events') }}">Events--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.photos') }}">Photos--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.faq') }}">Faq--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{ route('landing.price') }}">Price--}}
-{{--                        <span>/</span>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('landing.home') }}">HOME
-                        <span>/</span>
-                    </a>
+                    <a class="nav-link" href="{{ route('landing.home') }}">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('landing.class.index') }}">CLASS
-                        <span>/</span>
-                    </a>
+                    <a class="nav-link" href="{{ route('landing.class.index') }}">CLASS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('landing.class.mine') }}">MY CLASS
-                        <span>/</span>
-                    </a>
+                    <a class="nav-link" href="{{ route('landing.class.mine') }}">MY CLASS</a>
                 </li>
                 @if(isset($training_enroll) && $menu_atas == true)
 
